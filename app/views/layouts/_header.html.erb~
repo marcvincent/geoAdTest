@@ -1,8 +1,11 @@
 <header class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "geoaddress", home_path, id: "logo" %>
       <nav>
+		<ul class="nav pull-left">
+			<input  size="50" type="text" name="FirstName" value=" .YouAreHere">
+		</ul>
+
         <ul class="nav pull-right">
           <li><%= link_to "Sign in", '#' %></li>
         </ul>

@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
 
-	<%= render 'layouts/mohsHead' %>
 
-  <head>
-    <title><%= full_title(yield(:title)) %></title>
-    <%= stylesheet_link_tag    "application", media: "all" %>
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
-    <%= render 'layouts/shim' %>
-  </head>
+
+
+  	<%= render 'layouts/mohsHead' %>
+
+
+
   <body onload="initialize()">
 
     <%= render 'layouts/header' %>
-    <div class="container">
-      <%= yield %>
+    <div class="container" style="width:100%; height:500px; margin-bottom:2em"></div>
 
+      <%= yield %>
+		<%= render 'layouts/footer' %>
     </div>
-     <%= render 'layouts/footer' %>
+
   </body>
 </html>

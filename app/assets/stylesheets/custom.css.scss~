@@ -1,17 +1,5 @@
 @import "bootstrap";
 
-
-
-/* GeoAddress */
-
-
-#geo_Infos{
-
-
-
-}
-
-
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
@@ -41,6 +29,13 @@ textarea {
   }
 }
 
+#explications {
+
+	border-top: 1px solid $grayMediumLight;
+	padding: 2em;
+	text-align: left;
+}
+
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
@@ -51,21 +46,22 @@ h1 {
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: right;
 }
 
 h2 {
   font-size: 1.7em;
   letter-spacing: -1px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
   font-weight: normal;
-  color: $grayLight;
+  color: $grayDarker;
 }
 
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  text-align: left;
 }
 
 
@@ -75,14 +71,14 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: $grayDarker;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
   &:hover {
-    color: white;
+    color: $grayLight;
     text-decoration: none;
   }
 }

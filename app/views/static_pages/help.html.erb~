@@ -1,2 +1,13 @@
-<h1>StaticPages#help</h1>
-<p>Find me in app/views/static_pages/help.html.erb</p>
+<% provide(:title, 'Help') %>
+
+
+<table border="0">
+	<tr>
+		<th><%= link_to image_tag("sgrid4.gif", alt: "Geodesic"), home_path %></th>
+		<th>
+
+			<h1>Addresses, gone global</h1>
+			<p>GeoAddress is a tool for the world to communicate addresses and geo-informations </p>
+		</th>
+	</tr>
+</table>
