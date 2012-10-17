@@ -2,12 +2,19 @@
   <div class="navbar-inner">
     <div class="container">
       <nav>
-		<ul class="nav pull-left">
-			<input  size="520" type="text" name="FirstName" value=" .YouAreHere">
-		</ul>
 
         <ul class="nav pull-right">
-          <li><%= link_to "Sign in", '#' %></li>
+
+        	<% if signed_in? %>
+			  <%# Links for signed-in users %>
+			  <li><%= link_to "Sign out", signout_path, method: "delete" %></li>
+			 <li> <%= link_to "Users", '#' %></li>
+				<li><%= link_to "Settings", '#' %></li>
+			<% else %>
+			  <%# Links for non-signed-in-users %>
+			  <li><%= link_to "Sign in", 'signin' %></li>
+			<% end %>
+
         </ul>
       </nav>
     </div>
