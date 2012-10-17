@@ -3,7 +3,7 @@
     <div class="container">
       <nav>
 		<ul class="nav pull-left">
-			<input  size="50" type="text" name="FirstName" value=" .YouAreHere">
+			<input  size="520" type="text" name="FirstName" value=" .YouAreHere">
 		</ul>
 
         <ul class="nav pull-right">
